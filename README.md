@@ -11,9 +11,7 @@ Common regular expression and helper
 ## Installation
 
 ```sh
-$ npm install regex-box
-or
-$ npm install regex-box --save
+$ npm i regex-box --save
 ```
 
 ## Usage
@@ -25,10 +23,8 @@ var ips = require('regex-box').ip
 console.log(v4.is('192.168.0.1')); // true
 console.log(v6.is('1:2:3:4:5:6:7:8')); // true
 console.log(ip.is('1:2:3:4:5:6:7:8')); // true
-
-console.log(ips.v4.is('192.168.0.1')); // true
-console.log(ips.v6.is('1:2:3:4:5:6:7:8')); // true
-console.log(ips.ip.is('1:2:3:4:5:6:7:8')); // true
+console.log(ip.contain('abc 192.168.0.1')); // true
+console.log(ip.match('abc 1:2:3:4:5:6:7:8')); // ['1:2:3:4:5:6:7:8']
 
 console.log(ip.e('unicorn 192.168.0.1').is()); // false
 console.log(ip.e('unicorn 192.168.0.1').contain());  // true

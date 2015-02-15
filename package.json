@@ -1,7 +1,7 @@
 {
   "name": "regex-box",
-  "version": "0.1.1",
-  "description": "Common regular expression and helper ",
+  "version": "0.1.2",
+  "description": "Common regular expression and helper",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -50,7 +50,7 @@
     "node": ">=0.10.0"
   },
   "dependencies": {
-    "recoo": "^1.0.3"
+    "recoo": "^1.0.5"
   },
   "devDependencies": {
     "chai": "^2.0.0",
