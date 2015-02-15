@@ -19,7 +19,7 @@ $ npm install regex-box --save
 ## Usage
 
 ```js
-var ips = require('../').ip
+var ips = require('regex-box').ip
 ,v4 = ips.v4 ,v6 = ips.v6 ,ip = ips.ip;
 
 console.log(v4.is('192.168.0.1')); // true

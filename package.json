@@ -7,6 +7,8 @@
     "test": "test"
   },
   "scripts": {
+    "prepublish": "node lib/tlds.js",
+    "pretest": "node lib/tlds.js",
     "test": "make test"
   },
   "repository": {
@@ -18,7 +20,25 @@
     "regex",
     "regexp",
     "regular",
-    "expression"
+    "expression",
+    "ip",
+    "url",
+    "email",
+    "domain",
+    "address",
+    "internet",
+    "protocol",
+    "string",
+    "text",
+    "is",
+    "test",
+    "find",
+    "parse",
+    "check",
+    "match",
+    "contain",
+    "pattern",
+    "validate"
   ],
   "author": "Mark Zhan <markzhann@qq.com> (markzhan.com)",
   "license": "MIT",
@@ -26,12 +46,16 @@
     "url": "https://github.com/markzhan/regex-box/issues"
   },
   "homepage": "https://github.com/markzhan/regex-box",
+  "engines": {
+    "node": ">=0.10.0"
+  },
   "dependencies": {
     "recoo": "^1.0.3"
   },
   "devDependencies": {
     "chai": "^2.0.0",
     "istanbul": "^0.3.5",
-    "mocha": "^2.1.0"
+    "mocha": "^2.1.0",
+    "tlds": "^1.27.0"
   }
 }
