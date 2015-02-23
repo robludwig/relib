@@ -1,23 +1,23 @@
-[![Build Status](https://api.travis-ci.org/markzhan/regex-box.svg?branch=master)](https://travis-ci.org/markzhan/regex-box)
-[![Coverage Status](https://coveralls.io/repos/markzhan/regex-box/badge.svg)](https://coveralls.io/r/markzhan/regex-box)
-[![NPM Downloads](https://img.shields.io/npm/dm/regex-box.svg?style=flat)](https://www.npmjs.org/package/regex-box)
+[![Build Status](https://api.travis-ci.org/markzhan/relib.svg?branch=master)](https://travis-ci.org/markzhan/relib)
+[![Coverage Status](https://coveralls.io/repos/markzhan/relib/badge.svg)](https://coveralls.io/r/markzhan/relib)
+[![NPM Downloads](https://img.shields.io/npm/dm/relib.svg?style=flat)](https://www.npmjs.org/package/relib)
 
 
-# regex-box
+# relib
 
-Common regular expression and helper
+A regular expression library for node.js
 
 
 ## Installation
 
 ```sh
-$ npm i regex-box --save
+$ npm i relib --save
 ```
 
 ## Usage
 
 ```js
-var ips = require('regex-box').ip
+var ips = require('relib').ip
 ,v4 = ips.v4 ,v6 = ips.v6 ,ip = ips.ip;
 
 console.log(v4.is('192.168.0.1')); // true
@@ -68,7 +68,7 @@ See [RECOO](https://github.com/markzhan/recoo/blob/master/README.md) for details
 * **.ip.is(), ip.contain(), ip.match()** - IPv4 or IPv6
 
 ```js
-var ips = require('regex-box').ip
+var ips = require('relib').ip
 ,v4 = ips.v4 ,v6 = ips.v6 ,ip = ips.ip;
 
 ip.is('1:2:3:4:5:6:7:8'); // true
@@ -89,7 +89,7 @@ v6.is('1:2:3:4:5:6:7:8'); // true
 * **email.match(string)**  - Return an array if a string contains email address.
 
 ```js
-var email = require('regex-box').email;
+var email = require('relib').email;
 
 email.is('markzhann@gmail.com'); // true
 email.contain('unicorn markzhann@gmail.com'); // true
@@ -104,7 +104,7 @@ email.match('unicorn markzhann@gmail.com cake john@doe.com rainbow'); // ['sindr
 * **domain.match(string)**  - Return an array if a string contains domain.
 
 ```js
-var domain = require('regex-box').domain;
+var domain = require('relib').domain;
 
 domain.is('example.com'); // true
 domain.is('unicorn example.com'); // false
@@ -120,7 +120,7 @@ domain.match('unicorn example.com cake a.sub.domain.org rainbow'); // ['example.
 * **url.match(string)**  - Return an array if a string contains URL.
 
 ```js
-var url = require('regex-box').url;
+var url = require('relib').url;
 
 url.is('https://github.com'); // true
 url.contain('foo github.com bar google.com'); // true
@@ -132,11 +132,11 @@ url.match('foo https://github.com bar google.com'); // ['https://github.com', 'g
 
 ## Contributions
 
-To run the tests for **regex-box** simply run:
+To run the tests for **relib** simply run:
 ```sh
 npm i && npm test  # install dev dependencies and test
 ```
-For bugs and feature requests, [please create an issue](https://github.com/markzhan/regex-box/issues).
+For bugs and feature requests, [please create an issue](https://github.com/markzhan/relib/issues).
 
 Pull requests is always welcome.
 
@@ -146,7 +146,7 @@ Pull requests is always welcome.
 4. Push to the branch `git push origin my-new-feature`
 5. Create new Pull Request
 
-[Contributors](https://github.com/markzhan/regex-box/graphs/contributors)
+[Contributors](https://github.com/markzhan/relib/graphs/contributors)
 
 
 ## License

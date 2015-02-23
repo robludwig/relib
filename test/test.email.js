@@ -62,6 +62,9 @@ describe('email', function() {
     is_email.forEach(function(str){
       assert.ok(email.contain(str));
     });
+    contains.forEach(function(str){
+      assert.ok(email.match(str));
+    });
   });
 
 });
