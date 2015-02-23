@@ -5,7 +5,7 @@
 
 # relib
 
-A regular expression library for node.js
+A regular expression library for node.js.
 
 
 ## Installation
@@ -97,7 +97,7 @@ email.match('unicorn markzhann@gmail.com cake john@doe.com rainbow'); // ['sindr
 ```
 
 <a name='domain'></a>
-### Domain Regex with IDN Support
+### Domain Regex
 
 * **domain.is(string)**  - Check if a string is domain.
 * **domain.contain(string)**  - Check if a string contains domain.
