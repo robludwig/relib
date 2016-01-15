@@ -93,7 +93,7 @@ var email = require('relib').email;
 
 email.is('markzhann@gmail.com'); // true
 email.contain('unicorn markzhann@gmail.com'); // true
-email.match('unicorn markzhann@gmail.com cake john@doe.com rainbow'); // ['sindresorhus@gmail.com', 'john@doe.com']
+email.match('unicorn markzhann@gmail.com cake john@doe.com rainbow'); // ['markzhann@gmail.com', 'john@doe.com']
 ```
 
 <a name='domain'></a>
